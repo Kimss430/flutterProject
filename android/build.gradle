@@ -16,10 +16,6 @@ subprojects {
 tasks.register("clean", Delete) {
     delete rootProject.buildDir
 }
-buildscript {
-    dependencies {
-        classpath 'com.android.tools.build:gradle:8.0.2' // Gradle Plugin 버전 8.0 이상
-    }
-}
+
 
 

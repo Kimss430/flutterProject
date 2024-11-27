@@ -38,12 +38,9 @@ dependencies:
   calendar_date_picker2: ^1.1.7
   flutter_localization: ^0.2.2
   shared_preferences: ^2.3.3
-  sqflite:
   path:
+  sqflite:
   youtube_player_flutter:
-  dependencies:
-  flutter_sim_country_code:
-    path: ./packages/flutter_sim_country_code
 
 
   # The following adds the Cupertino Icons font to your application.

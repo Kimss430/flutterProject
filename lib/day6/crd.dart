@@ -56,9 +56,17 @@ class _DBWidgetState extends State<DBWidget> {
                 itemCount: item.length,
                 itemBuilder: (context, index) {
                   return ListTile(
-                    title: Text(item[index]['name']),
-                    subtitle: Text('Value: ${item[index]['value']}, Num: ${item[index]['num']}'),
-
+                      title: Text(item[index]['name']),
+                      subtitle: Text('Value: ${item[index]['value']}, Num: ${item[index]['num']}'),
+                      trailing: IconButton(
+                        icon: Icon(Icons.delete),
+                        onPressed: () async {
+                          // 삭제
+                          int id = item[index]['id'];
+                          await DB.deleteData(id);
+                          _fetchData();  // 새로 고침
+                        },
+                      )
                   );
                 },
               ),
