@@ -33,7 +33,7 @@ dependencies:
   http:
   flutter_rating_bar:
   qr_flutter: ^4.1.0
-  country_calling_code_picker:
+  #country_calling_code_picker:
   fluttertoast: ^8.2.8
   calendar_date_picker2: ^1.1.7
   flutter_localization: ^0.2.2
@@ -41,7 +41,8 @@ dependencies:
   path:
   sqflite:
   youtube_player_flutter:
-
+  cloud_firestore:
+  firebase_core:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
